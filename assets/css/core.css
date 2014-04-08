@@ -1,0 +1,103 @@
+
+* {
+    -moz-box-sizing:border-box;
+    -webkit-kit-box-sizing:border-box;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing:antialiased;
+}
+
+h1{
+  font-size:4em;
+  margin-bottom: 10px;
+  font-family: Arial;
+  letter-spacing: -7px;
+  color: #333;
+}
+#global-wrap{
+	width: 70%;
+	margin: 40px auto;
+}
+
+.name-spce{
+  color: #42567B;
+}
+.done{
+  text-decoration: line-through;
+  color: #ccc;
+}
+#todos-app input{
+   display: inline;
+   padding:10px;
+   width: 90%;
+   font-size: 2em;
+   border:5px solid #42567B;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.todo-item{
+  margin-top: 20px;
+}
+.todo-item li{
+  list-style: none;
+  font-size: 1.6em;
+  border-bottom: 1px solid black;
+  padding: 10px 5px;
+}
+button.btn{
+  padding: 20px;
+
+}
+button.clear{
+  margin-top: 100px;
+  min-width: 30%;
+  font-size: 1.3em;
+  color: #fff;
+  border: 0;
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #B8FF70 0%, #174000 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #B8FF70 0%, #174000 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #B8FF70 0%, #174000 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #B8FF70), color-stop(1, #174000));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #B8FF70 0%, #174000 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #B8FF70 0%, #174000 100%);
+
+text-shadow: -1px 0px 22px rgba(159, 149, 150, 1);
+
+
+}
+button.go{
+  min-width: 8%;
+  padding: 10px;
+  /*height: 60px;*/
+  background:#42567B;
+  color: #fff;
+  border:5px solid #42567B;
+  font-weight: bold;
+  font-size: 2em;
+  display: inline;
+  margin-left: -10px;
+      -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+}
+#todos-app input.checked{
+  width: auto;
+  padding: 10px;
+  display: inline-block;
+  margin-right: 20px;
+  border: 0;
+}

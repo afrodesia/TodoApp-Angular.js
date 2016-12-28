@@ -20,7 +20,9 @@ body {
       color: #fbb6b6; }
   #todos-app ul.todo-item {
     list-style: none;
-    margin-top: 20px; }
+    margin-top: 20px;
+    /* .squaredOne */
+    /* end .squaredOne */ }
     #todos-app ul.todo-item li {
       padding: 20px; }
     #todos-app ul.todo-item input.checked {
@@ -29,6 +31,38 @@ body {
       display: inline-block;
       margin-right: 20px;
       border: 0; }
+    #todos-app ul.todo-item .squaredOne {
+      width: 28px;
+      height: 28px;
+      position: relative;
+      margin: 20px auto;
+      background: #fcfff4;
+      background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+      box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5); }
+      #todos-app ul.todo-item .squaredOne label {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        cursor: pointer;
+        background: linear-gradient(top, #222 0%, #45484d 100%);
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white; }
+        #todos-app ul.todo-item .squaredOne label:after {
+          content: '';
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+          opacity: 0; }
+        #todos-app ul.todo-item .squaredOne label:hover::after {
+          opacity: 0.3; }
+      #todos-app ul.todo-item .squaredOne input[type=checkbox] {
+        visibility: hidden; }
+        #todos-app ul.todo-item .squaredOne input[type=checkbox]:checked + label:after {
+          opacity: 1; }
   #todos-app button.btn-danger {
     height: 60px;
     background-color: #d9534f; }
@@ -48,11 +82,10 @@ body {
     color: #ccc;
     vertical-align: center;
     padding-bottom: 10px;
-    border-radius: 0px; }
+    border-radius: 0px;
+    font-size: 2rem; }
     #todos-app .alert-success input {
       background: #333; }
-  #todos-app .ng-binding {
-    padding-left: 100px; }
   #todos-app .clear-btn {
     margin-top: 50px;
     padding: 15px;

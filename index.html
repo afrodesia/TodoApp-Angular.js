@@ -9,7 +9,7 @@
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="css/app.css">
+
 
 <title>Todo App - Angular.JS</title>
 
@@ -23,7 +23,7 @@
 
 <!-- STYLE SHEETS -->
 
-<link rel="stylesheet" href="assets/css/core.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/core.css" />
 
 
 
@@ -61,22 +61,16 @@
                     </div>
                     </form>
             </div>
-<!-- 
-             <form name="frm" ng-submit="addTodo()">
-               <input type="text" name="newtodo" ng-model="newTodo" 
-               placeholder="Place your new todo here" required /> 
-                <button ng-disabled="frm.$invalid" class="go">Go</button>
-             </form> -->
          
 
             <ul class="todo-item">
-             <li ng-repeat="todo in todos track by $index">
+             <li class="alert-success" role="alert" ng-repeat="todo in todos track by $index">
               <input type="checkbox" ng-model="todo.done" class="checked" />
               <span ng-class="{'done':todo.done}">{{todo.title}}</span>         
              </li>
             </ul>
 
-          <button ng-click="clearCompleted()" class="btn clear">Clear Completed</button>
+          <button ng-click="clearCompleted()" class="btn clear-btn pull-right">Clear Completed</button>
       </section>
    </div>
 

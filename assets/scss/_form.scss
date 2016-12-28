@@ -1,0 +1,82 @@
+* {
+    -moz-box-sizing:border-box;
+    -webkit-kit-box-sizing:border-box;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing:antialiased;
+}
+body{
+	background:#333;
+}
+#todos-app{
+	margin-top:50px;
+	h1{
+		padding-bottom:20px;
+		font-size: 5rem;
+		letter-spacing: -3px;
+		color:#fff;
+		span{
+			color:#fbb6b6;
+		}
+	}
+	ul.todo-item{
+		list-style:none;
+		margin-top: 20px;
+		li{
+			padding: 20px;
+
+			border-radius:6px;
+		}
+		input.checked{
+		    width: auto;
+		    padding: 10px;
+		    display: inline-block;
+		    margin-right: 20px;
+		    border: 0;
+		}
+	}
+	
+	button.btn-danger{
+		height:60px;
+		background-color:#d9534f;
+	}
+	input.form-control{
+		background:#333;
+		color:#fff;
+		height:60px;
+		padding:10px;
+		border-left:8px solid #d9534f;
+		border-top:8px solid #d9534f;
+		border-bottom:8px solid #d9534f;
+	}
+	input[type=checkbox]{
+		background:red;
+	}
+	.alert-success{
+		background:none;
+		border-bottom: dashed 1px #ccc;
+		color:#ccc;
+		vertical-align: center;
+		padding-bottom:10px;
+		border-radius:0px;
+		input{
+			background:#333;
+		}
+	}
+	.ng-binding{
+		padding-left:100px;
+	}
+	.clear-btn{
+		margin-top:50px;
+		padding:15px;
+		background:#fff;
+		:hover{
+			background:#d9534f;
+		}
+	}
+	.done{
+  		text-decoration: line-through;
+  		color: #ccc;
+ 	}
+}

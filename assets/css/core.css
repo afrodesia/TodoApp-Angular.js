@@ -1,46 +1,65 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-*, html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
+  -moz-box-sizing: border-box;
+  -webkit-kit-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+  -webkit-font-smoothing: antialiased; }
 
 body {
-  line-height: 1; }
+  background: #333; }
 
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+#todos-app {
+  margin-top: 50px; }
+  #todos-app h1 {
+    padding-bottom: 20px;
+    font-size: 5rem;
+    letter-spacing: -3px;
+    color: #fff; }
+    #todos-app h1 span {
+      color: #fbb6b6; }
+  #todos-app ul.todo-item {
+    list-style: none;
+    margin-top: 20px; }
+    #todos-app ul.todo-item li {
+      padding: 20px;
+      border-radius: 6px; }
+    #todos-app ul.todo-item input.checked {
+      width: auto;
+      padding: 10px;
+      display: inline-block;
+      margin-right: 20px;
+      border: 0; }
+  #todos-app button.btn-danger {
+    height: 60px;
+    background-color: #d9534f; }
+  #todos-app input.form-control {
+    background: #333;
+    color: #fff;
+    height: 60px;
+    padding: 10px;
+    border-left: 8px solid #d9534f;
+    border-top: 8px solid #d9534f;
+    border-bottom: 8px solid #d9534f; }
+  #todos-app input[type=checkbox] {
+    background: red; }
+  #todos-app .alert-success {
+    background: none;
+    border-bottom: dashed 1px #ccc;
+    color: #ccc;
+    vertical-align: center;
+    padding-bottom: 10px;
+    border-radius: 0px; }
+    #todos-app .alert-success input {
+      background: #333; }
+  #todos-app .ng-binding {
+    padding-left: 100px; }
+  #todos-app .clear-btn {
+    margin-top: 50px;
+    padding: 15px;
+    background: #fff; }
+    #todos-app .clear-btn :hover {
+      background: #d9534f; }
+  #todos-app .done {
+    text-decoration: line-through;
+    color: #ccc; }

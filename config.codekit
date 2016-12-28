@@ -22,15 +22,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/scss\/_reset.scss": {
+	"\/assets\/scss\/_form.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/scss\/_reset.scss",
-		"outputAbbreviatedPath": "\/assets\/css\/_reset.css",
+		"inputAbbreviatedPath": "\/assets\/scss\/_form.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_form.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

@@ -22,8 +22,7 @@ body {
     list-style: none;
     margin-top: 20px; }
     #todos-app ul.todo-item li {
-      padding: 20px;
-      border-radius: 6px; }
+      padding: 20px; }
     #todos-app ul.todo-item input.checked {
       width: auto;
       padding: 10px;

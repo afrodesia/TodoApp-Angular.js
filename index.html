@@ -7,7 +7,11 @@
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
-<title>Todo App</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/app.css">
+
+<title>Todo App - Angular.JS</title>
 
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,26 +24,49 @@
 <!-- STYLE SHEETS -->
 
 <link rel="stylesheet" href="assets/css/core.css" type="text/css" />
-<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
+
 
 
 </head>
 
-<body id="index" class="home" ng-app="ToDo">
+<body ng-app="ToDo">
 
-   <div id="global-wrap">
-     <div id="content-wrap">
+   <div class="container">
       
       <section id="todos-app" ng-controller="todoController">
 
         <h1>Todo<span class="name-spce">App</span></h1>
-      
+            
+                
 
+
+                <div class="TodoBar">
+                
+
+                <form name="frm" ng-submit="addTodo()">
+                  <div class="input-group">
+                    
+                      <input 
+                          type="text" 
+                          name="newtodo" 
+                          ng-model="newTodo" 
+                          class="form-control" 
+                          placeholder="Place your new todo here"
+                          required 
+                      />
+                      <span class="input-group-btn">
+                        <button ng-disabled="frm.$invalid" class="btn btn-danger">Add Todo!</button>
+                      </span>
+
+                    </div>
+                    </form>
+            </div>
+<!-- 
              <form name="frm" ng-submit="addTodo()">
                <input type="text" name="newtodo" ng-model="newTodo" 
                placeholder="Place your new todo here" required /> 
                 <button ng-disabled="frm.$invalid" class="go">Go</button>
-             </form>
+             </form> -->
          
 
             <ul class="todo-item">
@@ -51,8 +78,6 @@
 
           <button ng-click="clearCompleted()" class="btn clear">Clear Completed</button>
       </section>
-
-     </div>
    </div>
 
 <!-- JS LOAD -->
